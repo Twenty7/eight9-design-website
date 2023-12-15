@@ -40,7 +40,6 @@ jobs:
           cache: 'npm'
       - name: Cache node_modules
         uses: actions/cache@v2
-        working-directory: web
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
