@@ -39,3 +39,33 @@
     }
   }
 }
+
+.site-content {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.services-content {
+  .icon-box {
+    .center-circle-icon {
+      width: 60px !important;
+      height: 60px !important;
+      padding: 0px !important;
+      text-align: center;
+      line-height: 60px;
+      // border: 1px solid black;
+      color: #fff;
+      margin: 0;
+      border-radius: 50%;
+      font-size:1.8em;
+      background-color: $primary;
+      margin:auto;
+    }
+    .description {
+      .svg-inline--fa {
+        margin-right: 5px;
+        color: $primary;
+      }
+    }
+  }
+}

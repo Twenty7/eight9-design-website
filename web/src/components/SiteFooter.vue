@@ -41,10 +41,10 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm">
-            <span>Copyright &copy; 2023-{{ year }} <span class="text-standout">Eight9 Design Network INC</span></span>
+            <div class="nav-item">Copyright &copy; 2023-{{ year }} <span class="text-standout">Eight9 Design Network INC</span></div>
           </div>
           <div class="col-12 col-sm-auto text-right">
-            <span class="">Developed by <a class="misc-link" href="https://eight9.net/">Eight9 Design Network INC</a></span>
+            <div class="nav-item">Developed by <a class="misc-link" href="https://eight9.net/">Eight9 Design Network</a></div>
           </div>
         </div>
       </div>
