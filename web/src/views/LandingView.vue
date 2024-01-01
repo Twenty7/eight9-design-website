@@ -103,7 +103,6 @@
 
     <section id="section-home" class="container-fluid hero-content">
       <div class="text-center">
-        Hero
         <h1>Quality Business Solutions</h1>
       </div>
     </section>
