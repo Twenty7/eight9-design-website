@@ -26,12 +26,18 @@ axios.interceptors.response.use(undefined, function (error) {
 
 export default {
   async send_contact_form(request) {
-    const { data } = await axios.post(`/api/send-contact`, request);
-    return data;
+    let options = {
+      headers: {
+        "Content-Type": "application/json"
+      }
+    };
+    let response = await axios.post(`https://fabform.io/f/w7Nh5_x`, request, options);
+    // const { data } = await axios.post(`https://api.staticforms.xyz/submit`, request, options);
+    return response;
   },
-  async fetch_products(request) {
-    const { data } = await axios.get(`/api/fetch-products`, request);
-    return data;
-  },
+  // async fetch_products(request) {
+  //   const { data } = await axios.get(`/api/fetch-products`, request);
+  //   return data;
+  // },
 
 }

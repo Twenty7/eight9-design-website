@@ -27,15 +27,15 @@
 </script>
 <template>
 
-  <ul class="navbar-nav" :class="css_class">
+  <ul id="site-navbar" class="navbar-nav" :class="css_class">
     <li class="nav-item">
-      <router-link class="nav-link text-nowrap" :class="{active: active_route == 'home' }" to="#top" @click.native="scrollFix('#scroll')"><font-awesome-icon :icon="['fas', 'home']" /> Home</router-link>
+      <router-link class="nav-link text-nowrap" to="#section-home" ><font-awesome-icon :icon="['fas', 'home']" /> Home</router-link>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link text-nowrap" :class="{active: active_route == 'products' }" to="#services" @click.native="scrollFix('#services')"><font-awesome-icon :icon="['fas', 'camera-retro']" /> Services</router-link>
+      <router-link class="nav-link text-nowrap" to="#section-services"><font-awesome-icon :icon="['fas', 'camera-retro']" /> Services</router-link>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link text-nowrap" :class="{active: active_route == 'contact' }" to="#contact" @click.native="scrollFix('#contact')"><font-awesome-icon :icon="['fas', 'envelope']" /> Contact</router-link>
+      <router-link class="nav-link text-nowrap" to="#section-contact"><font-awesome-icon :icon="['fas', 'envelope']" /> Contact</router-link>
     </li>
   </ul>
 

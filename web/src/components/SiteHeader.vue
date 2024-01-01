@@ -28,17 +28,14 @@
       <div class="container-fluid">
         <a class="navbar-brand sitehead-brand" href="#">Eight9 Design Network</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinkContent" aria-controls="navbarLinkContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-center nav-sitehead" id="navbarLinkContent">
+        <div class="collapse navbar-collapse justify-content-center nav-sitehead" id="navbarMenu">
           <NavLinks />
         </div>
 
-        <div class="justify-content-end contact-sitehead">
-          <a v-if="false" class="nav-item" :href="'mailto:' + site.email + '?subject=Website Inquiry'"><font-awesome-icon :icon="['fas', 'envelope']" size="lg" /> {{ site.email }}</a>
-        </div>
       </div>
     </nav>
 

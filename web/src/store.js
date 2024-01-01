@@ -8,9 +8,10 @@ export default createStore({
     language: null,
 
     site: {
+      static_forms_key: "",
       email: "info@eight9.net",
-      address1: "123 foo st.",
-      address2: "Irvine, CA. 92618",
+      address1: "1968 S. Coast Hwy #2707",
+      address2: "Laguna Beach, CA 92651",
       website: "https://eight9.net",
     },
     loading_products: true,
@@ -26,12 +27,15 @@ export default createStore({
   actions: {
     // Contact
     do_submit_contact({commit}, req) {
+      console.log('do submit contact');
       return new Promise((resolve, reject) => {
-        api.send_contact(req).then(resp => {
-          if (!resp.success) {
+        api.send_contact_form(req).then(resp => {
+          console.log('RESPONSE', resp.status);
+          if (resp.status != 200) {
+            console.error('Response', resp);
             reject(resp);
           } else {
-            resolve(resp);
+            resolve(resp.data);
           }
         }).catch(err => {
           reject(err);

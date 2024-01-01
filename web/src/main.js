@@ -14,10 +14,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
   faHouse, faCameraRetro, faBook, faPhone, faEnvelope, faBars, faLocationDot, faAtom, faScrewdriverWrench, faStar, faCheck, faList,
-  faAt, faQuestion, faUser, faEye, faFilePdf, faChevronLeft, faChevronRight, faXmark, faDisplay, faRightLong
+  faAt, faQuestion, faUser, faEye, faFilePdf, faChevronLeft, faChevronRight, faXmark, faDisplay, faRightLong, faCode, faStore,
+  faCompassDrafting, faCloud
 } from '@fortawesome/free-solid-svg-icons'
 library.add(faHouse, faCameraRetro, faBook, faPhone, faEnvelope, faBars, faLocationDot, faAtom, faScrewdriverWrench, faStar, faCheck, faList,
-  faAt, faQuestion, faUser, faEye, faFilePdf, faChevronLeft, faChevronRight, faXmark, faDisplay, faRightLong
+  faAt, faQuestion, faUser, faEye, faFilePdf, faChevronLeft, faChevronRight, faXmark, faDisplay, faRightLong, faCode, faStore,
+  faCompassDrafting, faCloud
 );
 
 
