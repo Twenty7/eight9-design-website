@@ -13,7 +13,7 @@ let app_cfg = {
     company: 'AirWorks Cooling Solutions LLC.',
   },
   'mam': {
-    sender: 'matthew.taylor@microgridam.com',
+    sender: 'info@microgridam.com',
     title: 'MicrogridAM.com Contact Form',
     company: 'Microgrid Asset Management',
   },
