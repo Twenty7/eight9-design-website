@@ -57,7 +57,7 @@ export default {
         // Ignore Honeypots
         $this.status = 'success';
       } else {
-        let request = JSON.stringify({name: form.name, email: form.email, subject: form.subject, phone: form.phone, message: form.message});
+        let request = JSON.stringify({app_key: 'eight9', name: form.name, email: form.email, subject: form.subject, phone: form.phone, message: form.message});
         this.do_submit_contact(request)
           .then(function(res) {
             $this.status = 'success';

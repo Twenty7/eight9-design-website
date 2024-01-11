@@ -31,8 +31,7 @@ export default {
         "Content-Type": "application/json"
       }
     };
-    let response = await axios.post(`https://fabform.io/f/w7Nh5_x`, request, options);
-    // const { data } = await axios.post(`https://api.staticforms.xyz/submit`, request, options);
+    let response = await axios.post(`https://nmesql59ql.execute-api.us-west-1.amazonaws.com/contactLambda`, request, options);
     return response;
   },
   // async fetch_products(request) {
